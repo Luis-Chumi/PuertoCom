@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/usb")
+@RequestMapping("/com")
 @CrossOrigin("*")
 @Slf4j
 public class PuertoComSerialController {
@@ -44,6 +44,11 @@ public class PuertoComSerialController {
     @GetMapping("/receive")
     public String receiveSerialPort() {
         return puertoComSerialService.receiveData();
+    }
+
+    @GetMapping("/datapos")
+    public void pruebaDatapos() throws Exception {
+         puertoComSerialService.prueba();
     }
 
 }

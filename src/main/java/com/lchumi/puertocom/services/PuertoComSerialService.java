@@ -8,6 +8,10 @@
 
 package com.lchumi.puertocom.services;
 
+import com.DF.COM.obj.DatosEnvio;
+import com.DF.COM.obj.DatosRecepcion;
+import com.DF.Enum.ETipoCredito;
+import com.DF.POS.POS;
 import com.fazecast.jSerialComm.SerialPort;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -52,7 +56,7 @@ public class PuertoComSerialService {
     }
 
     public void disconnect() {
-        if (serialPort != null && serialPort.isOpen()) {
+        if (serialPort != null || serialPort.isOpen()) {
             serialPort.closePort();
             log.info("Puerto serial {} desconectado", serialPort.getDescriptivePortName());
         }
@@ -89,6 +93,30 @@ public class PuertoComSerialService {
             log.error("Error al recibir datos en el puerto serial: {}", e.getMessage(), e);
             return "Error al recibir datos en el puerto serial.";
         }
+    }
+
+    public void prueba() throws Exception {
+        POS pos = new POS(true);
+        System.out.println("iniciando .....");
+
+        pos.ConfigurarConexionPOS("COM4",9600,8,true);
+        System.out.println( pos.getStatus());
+
+        System.out.println( pos.ConfigurarConexionPOS("COM4",9600,8,true));
+
+
+
+        DatosEnvio denvio= new DatosEnvio();
+
+        denvio.setBaseImponible(1.00);
+        denvio.setTipoCredito(ETipoCredito.Corriente);
+        System.out.println(denvio.toString());
+        System.out.println(denvio.getBase0());
+        System.out.println(denvio.getBaseImponible());
+        System.out.println(denvio.getTipoCredito());
+        System.out.println(denvio.getClass().toString());
+        /*datosRecepcion = pos.ProcesarPago(denvio);
+        System.out.println(datosRecepcion);*/
     }
 
 
