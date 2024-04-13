@@ -8,6 +8,8 @@
 
 package com.lchumi.puertocom.controller;
 
+import com.DF.COM.obj.DatosEnvio;
+import com.DF.COM.obj.DatosRecepcion;
 import com.lchumi.puertocom.services.PuertoComSerialService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,8 +49,23 @@ public class PuertoComSerialController {
     }
 
     @GetMapping("/datapos")
-    public void pruebaDatapos() throws Exception {
-         puertoComSerialService.prueba();
+    public boolean conectarDataPos() throws Exception {
+        return puertoComSerialService.conectrarPuertoCom();
+    }
+
+    @GetMapping("/datapos-end")
+    public boolean desconectarDataPos() throws Exception {
+        return puertoComSerialService.desconectarPuertoCom();
+    }
+
+    @GetMapping("/end")
+    public boolean desconectar() throws Exception {
+        return puertoComSerialService.desconectarPOS();
+    }
+
+    @PostMapping("pruebaDatos")
+    public DatosRecepcion recibir(@RequestBody DatosEnvio datosEnvio) throws Exception {
+        return puertoComSerialService.recibir(datosEnvio);
     }
 
 }

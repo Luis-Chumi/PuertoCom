@@ -1,0 +1,73 @@
+20240413_105937:Informativo - INFO: Iniciando creación de instancia...
+20240413_105937:Informativo - INFO: Instancia creada satisfactoriamente...
+20240413_110030:Informativo - INFO: Iniciando configuración de conexión...
+20240413_110030:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_110030:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_110030:Error - INFO: Conectando al POS: 
+20240413_110030:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_110030:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_110030:Error - INFO: Conectando al POS: 
+20240413_110030:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_110030:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_110030:Error - INFO: Conectando al POS: 
+20240413_110030:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_110030:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_110030:Error - INFO: Conectando al POS: 
+20240413_110030:Error - ERROR: No se ha logrado conectar al POS, favor consulte con su dpto. de sistemas...
+20240413_110030:Informativo - INFO: Conexión configurada satisfactoriamente...
+20240413_110039:Informativo - INFO: Iniciando configuración de conexión...
+20240413_110039:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_110039:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_110039:Error - INFO: Conectando al POS: 
+20240413_110039:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_110039:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_110039:Error - INFO: Conectando al POS: 
+20240413_110039:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_110039:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_110039:Error - INFO: Conectando al POS: 
+20240413_110039:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_110039:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_110039:Error - INFO: Conectando al POS: 
+20240413_110039:Error - ERROR: No se ha logrado conectar al POS, favor consulte con su dpto. de sistemas...
+20240413_110039:Informativo - INFO: Conexión configurada satisfactoriamente...
+20240413_110133:Informativo - INFO: Iniciando creación de instancia...
+20240413_110133:Informativo - INFO: Instancia creada satisfactoriamente...
+20240413_121543:Informativo - INFO: Iniciando creación de instancia...
+20240413_121543:Informativo - INFO: Instancia creada satisfactoriamente...
+20240413_121602:Informativo - INFO: Iniciando configuración de conexión...
+20240413_121602:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_121602:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_121602:Error - INFO: Conectando al POS: 
+20240413_121602:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_121602:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_121602:Error - INFO: Conectando al POS: 
+20240413_121602:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_121602:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_121602:Error - INFO: Conectando al POS: 
+20240413_121602:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_121602:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_121602:Error - INFO: Conectando al POS: 
+20240413_121602:Error - ERROR: No se ha logrado conectar al POS, favor consulte con su dpto. de sistemas...
+20240413_121602:Informativo - INFO: Conexión configurada satisfactoriamente...
+20240413_121637:Informativo - INFO: Iniciando proceso de pago entidad
+20240413_121637:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_121637:Error - ERROR: No se ha logrado conectar al POS, favor consulte con su dpto. de sistemas...
+20240413_121637:Error - ERROR: Desconexión con puerto: Cannot invoke "com.fazecast.jSerialComm.SerialPort.closePort()" because "this._oPuertoSerial" is null
+20240413_121849:Error - ERROR: Desconexión con puerto: Cannot invoke "com.fazecast.jSerialComm.SerialPort.closePort()" because "this._oPuertoSerial" is null
+20240413_121849:Error - INFO: Desconectando del POS: 
+20240413_121859:Informativo - INFO: Iniciando configuración de conexión...
+20240413_121859:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_121859:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_121859:Error - INFO: Conectando al POS: 
+20240413_121859:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_121859:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_121859:Error - INFO: Conectando al POS: 
+20240413_121859:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_121859:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_121859:Error - INFO: Conectando al POS: 
+20240413_121859:Error - ERROR: Configurando Puerto: Unable to create a serial port object from the invalid port descriptor: null
+20240413_121859:Error - ERROR: Puerto ocupado: Cannot invoke "com.fazecast.jSerialComm.SerialPort.isOpen()" because "this._oPuertoSerial" is null
+20240413_121859:Error - INFO: Conectando al POS: 
+20240413_121859:Error - ERROR: No se ha logrado conectar al POS, favor consulte con su dpto. de sistemas...
+20240413_121859:Informativo - INFO: Conexión configurada satisfactoriamente...
+20240413_121914:Informativo - INFO: Iniciando configuración de conexión...

@@ -8,9 +8,9 @@
 
 package com.lchumi.puertocom.services;
 
+
 import com.DF.COM.obj.DatosEnvio;
 import com.DF.COM.obj.DatosRecepcion;
-import com.DF.Enum.ETipoCredito;
 import com.DF.POS.POS;
 import com.fazecast.jSerialComm.SerialPort;
 import lombok.extern.slf4j.Slf4j;
@@ -26,6 +26,7 @@ import java.util.List;
 public class PuertoComSerialService {
 
     private SerialPort serialPort;
+    private final POS pos = new POS(true);
 
     public List<String> listaPuerto() {
         List<String> listaPuertosCom= new ArrayList<>();
@@ -95,29 +96,19 @@ public class PuertoComSerialService {
         }
     }
 
-    public void prueba() throws Exception {
-        POS pos = new POS(true);
-        System.out.println("iniciando .....");
-
-        pos.ConfigurarConexionPOS("COM4",9600,8,true);
-        System.out.println( pos.getStatus());
-
-        System.out.println( pos.ConfigurarConexionPOS("COM4",9600,8,true));
-
-
-
-        DatosEnvio denvio= new DatosEnvio();
-
-        denvio.setBaseImponible(1.00);
-        denvio.setTipoCredito(ETipoCredito.Corriente);
-        System.out.println(denvio.toString());
-        System.out.println(denvio.getBase0());
-        System.out.println(denvio.getBaseImponible());
-        System.out.println(denvio.getTipoCredito());
-        System.out.println(denvio.getClass().toString());
-        /*datosRecepcion = pos.ProcesarPago(denvio);
-        System.out.println(datosRecepcion);*/
+    public boolean conectrarPuertoCom() {
+        return pos.ConfigurarConexionPOS("COM4",9600,8,true);
     }
 
+    public boolean desconectarPuertoCom() {
+        return pos.ConfigurarConexionPOS("COM4",9600,8,false);
+    }
 
+    public boolean desconectarPOS() {
+        return pos.DesconectarPuerto();
+    }
+
+    public DatosRecepcion recibir(DatosEnvio datosEnvio) throws Exception {
+        return pos.ProcesarPago(datosEnvio);
+    }
 }
